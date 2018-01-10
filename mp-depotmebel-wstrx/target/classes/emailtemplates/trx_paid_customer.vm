@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Pembayaran Anda untuk No Order [No Order] SUKSES</title>
+</head>
+
+<body>
+    <h1>Terima kasih, <strong>${name}</strong>
+</h1>
+
+    <p>
+        Kami sudah menerima pembayaran Anda sebesar <strong>Rp ${amountIdr}</strong> 
+        untuk pesanan no: <strong>${orderno}</strong>
+    </p>
+
+    <p>
+        Saat ini kami sedang memproses pesanan Anda. Untuk melihat informasi terkini dari pesanan Anda, silahkan klik link berikut: <a href="www.centsmile.com/customer/order" target="_blank">www.centsmile.com/customer/order</a>
+        <br>
+    </p>
+
+    <p>
+        Apabila diperlukan, Anda dapat menghubungi kami melalui email ke alamat di bawah, dan jangan lupa cantumkan No Order Anda agar mempercepat tanggapan kami.
+    </p>
+
+    <p>
+        Ceritakan pengalaman menyenangkan Anda bersama <strong>CENTSMILE</strong> ke relasi dan sanak keluarga Anda. Dan kami juga sangat menghargai masukan-masukan demi pengalaman yang lebih baik.
+    </p>
+
+    <p>
+        Salam hangat,
+        <br><strong>
+CENTSMILE TEAM</strong>
+        <br>
+        <a href="www.centsmile.com" target="_blank">www.centsmile.com</a>
+        <br> Email: <a href="mailto:emailto:cs@centsmile.com" target="_blank">cs@centsmile.com</a>
+    </p>
+
+</body>
+
+</html>

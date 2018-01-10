@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mavangel.cent</groupId>
+	<artifactId>mp-furniture</artifactId>
+	<version>1</version>
+	<packaging>pom</packaging>
+	<name>MP Furniture - Parent</name>
+	
+	<properties>
+		<spring.version>4.0.1.RELEASE</spring.version>
+		<jackson.version>1.9.13</jackson.version>
+		<hibernate.version>4.3.5.Final</hibernate.version>
+		<jdk.version>1.7</jdk.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.7</version>
+		</dependency>
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.3</version>
+		        <configuration>
+		          <!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+		          <source>1.7</source>
+		          <target>1.7</target>
+		        </configuration>
+	      	</plugin>
+      		</plugins>
+		</pluginManagement>
+	</build>
+	
+	<modules>
+		<module>mp-depotmebel-core</module>
+    	<module>mp-depotmebel-wsproduct</module>
+    	<module>mp-depotmebel-adminpartner</module>
+    	<module>mp-depotmebel-adminvendor</module>
+    	<module>mp-depotmebel-wsuser</module>
+    	<module>mp-depotmebel-wstrx</module>
+  </modules>
+</project>

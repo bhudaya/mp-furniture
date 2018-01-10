@@ -1,0 +1,70 @@
+.biel-table {
+  	width: 100%;
+  	margin: 5px 0px 5px 0px; /* top, right, bottom, left */
+}
+/* .biel-table th {
+	padding: 2px 0px;
+	background-color: gray;
+} */
+.biel-table td {
+	padding: 2px 0px;
+} 
+.biel-table tr:nth-child(even) {
+    background-color: #eee;
+}
+.biel-table tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+
+/* Pagination */
+.biel-pagination-container {
+	width: 100%;
+	padding-top: 7px;
+}
+.biel-pagination-divleft {
+	float: left;
+	padding-right: 3px;
+	padding-top: 2px;
+}
+.biel-pagination-divright {
+	float: right;
+	padding-left: 3px;
+}
+.biel-pagination-info {
+	padding: 10px 0;
+}
+.biel-pagination {
+    display: inline-block;
+}
+.biel-pagination a {
+    color: black;
+    float: left;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+.biel-pagination a.active {
+    /* background-color: #4CAF50; */
+    background-color: #ddd;
+    color: white;
+}
+.biel-pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/* Search Field */
+.biel-uptable {
+	width: 100%;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	/* border-top: 2px solid red;
+	border-bottom: 2px solid red; */
+}
+.biel-uptable-divleft {
+	float: left;
+	padding-right: 3px;
+	padding-top: 3px; */
+}
+.biel-uptable-divright {
+	float: right;
+	padding-left: 3px;
+}

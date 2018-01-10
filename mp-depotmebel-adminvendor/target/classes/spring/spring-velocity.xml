@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+		<property name="velocityProperties">
+			<props>
+				<prop key="resource.loader">class</prop>
+				<prop key="class.resource.loader.class">
+					org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+				</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="mailcm.centsmile.com" />
+		<property name="port" value="587" />
+		<property name="username" value="noreply@centsmile.com" />
+		<property name="password" value="NJtXBcnTUqjNvsBrFL3I$" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.debug">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">mailcm.centsmile.com</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.mime.charset">UTF-8</prop>
+				<prop key="mail.transport.protocol">smtp</prop>
+				
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="trxReadyQcVelocity" class="centmp.depotmebel.adminvendor.velocity.TrxReadyQCVelocity">
+		<property name="velocityEngine" ref="velocityEngine" />
+	</bean>
+	<bean id="courierAssignedVelocity" class="centmp.depotmebel.adminvendor.velocity.CourierAssignedVelocity">
+		<property name="velocityEngine" ref="velocityEngine" />
+	</bean>
+	<bean id="podMail" class="centmp.depotmebel.adminvendor.mail.PodMail">
+		<property name="velocityEngine" ref="velocityEngine" />
+		<property name="mailSender" ref="mailSender" />
+	</bean>
+	
+</beans>

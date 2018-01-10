@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Pesanan Untuk Dikirimkan : [No Order]</title>
+</head>
+
+<body>
+    <h1>Dear ${name},
+</h1>
+
+    <p>
+        <strong>${operator}</strong> baru saja menunjuk Anda untuk mengirimkan pesanan ke alamat tujuan.
+        <br>
+    </p>
+
+    <p>Informasi pesanan:</p>
+
+    <ul>
+        <li>Nomor Pesanan:&nbsp;<strong>${orderno}</strong> </li>
+        <li>Waktu Pesanan Diterima: <strong>${paidDate}</strong></li>
+        <!--<li>Batas Waktu Pengantaran: <strong>[Tanggal dan Jam Pembayaran Sukses + SLA]</strong></li>-->
+        <li>Status: <strong>${statusDesc}</strong>.
+            <br>
+        </li>
+    </ul>
+
+    <p>Untuk melihat informasi lengkap dari pesanan Anda, silahkan klik link berikut: <a href="vendor.centsmile.com/c2/order/" target="" _blank="">vendor.centsmile.com/c2/order/</a>
+    </p>
+
+    <p>Berikan pelayanan terbaik untuk Pelanggan, karena Pelanggan adalah Raja. Pengalaman yang baik akan menjadi alat promosi yang baik untuk meningkatkan pendapatan Anda.
+    </p>
+
+    <p>
+        Salam hangat,
+        <br><strong>
+CENTSMILE TEAM</strong>
+        <br>
+        <a href="www.centsmile.com" target="_blank">www.centsmile.com</a>
+        <br> Email: <a href="mailto:emailto:cs@centsmile.com" target="_blank">cs@centsmile.com</a>
+    </p>
+
+</body>
+
+</html>

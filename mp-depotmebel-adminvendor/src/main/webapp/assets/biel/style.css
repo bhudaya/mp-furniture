@@ -1,0 +1,151 @@
+/*Flores Bajawa CSS Style*/
+
+/*Import*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+:root {
+  --space-large: 24px;
+  --space-normal: 16px;
+  --space-small: 8px;
+  --space-tiny: 4px;
+  --text-blue: #3c8dbc;
+  --text-yellow: #F39C12;
+  --line-color: #EAEAEA;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #F5F5F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", "Arial", "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+body,
+ul,
+li,
+p,
+a,
+span,
+button,
+label{
+    font-family: "Helvetica Neue", "Arial", "Open Sans", sans-serif;
+}
+
+/*Custom Style*/
+
+.box-body .box__item {
+  margin: var(--space-normal) 0;
+}
+
+.box-body .box__item--first {
+  margin-top: 0;
+}
+
+.box-body .box__item--last {
+  margin-bottom: 0;
+}
+
+.page__button {
+  margin-bottom: var(--space-normal);
+}
+
+/* Product Catalog */
+.catalog {
+
+}
+
+.catalog:hover > .catalog__item {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.2);;
+  -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.2);;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 0 1px 2px 0 rgba(0,0,0,.2);
+  transition: box-shadow 0.2s ease-out;
+}
+
+.catalog:hover img {
+  filter: brightness(90%);
+}
+
+.catalog:hover .catalog__action {
+  visibility: visible;
+}
+
+.catalog__item {
+  border: 1px solid var(--line-color);
+  padding: var(--space-tiny);
+}
+
+.catalog__image {
+  position: relative;
+}
+
+.catalog__image > .image {
+  width: 100%;
+  height: 150px;
+  -webkit-background-size: contain;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog__image > .image {
+    height: 120px;
+  }
+}
+
+.catalog__product {
+  margin: var(--space-small) 0;
+}
+
+.catalog__product__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.catalog__product__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.catalog__action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: var(--space-small);
+  visibility: hidden;
+}
+
+/* Product Detail */
+.product__image {
+  width: 100%;
+  height: 200px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*Order Detail*/
+.order__image {
+  width: 120px;
+  height: 90px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Pesanan Terkirim : [${orderno}]</title>
+
+</head>
+
+<body>
+    <h1>Dear ${name},
+</h1>
+
+    <p>
+        Pesanan Anda baru saja sampai di alamat tujuan dan diterima dengan baik oleh <strong>${receiverName}</strong>, (<strong>${receiverPhone}</strong>).
+        <br>
+    </p>
+
+    <p>Informasi pesanan:</p>
+
+    <ul>
+
+        <li>Nomor Pesanan: <strong>${orderno}</strong> </li>
+        <li>Status: <strong>Delivered</strong>.
+            <br>
+        </li>
+    </ul>
+
+    <p>Untuk melihat informasi lengkap dari pesanan Anda, silahkan klik link berikut: <a href="www.centsmile.com/customer/order" target="" _blank="">www.centsmile.com/customer/order</a>
+    </p>
+
+    <p>Ceritakan pengalaman menyenangkan Anda bersama <strong>CENTSMILE</strong> ke relasi dan sanak keluarga Anda. Dan kami juga sangat menghargai masukan-masukan demi pengalaman yang lebih baik.
+    </p>
+
+    <p>
+        Salam hangat,
+        <br>
+        <strong>CENTSMILE TEAM</strong>
+        <br>
+        <a href="www.centsmile.com" target="_blank">www.centsmile.com</a>
+        <br> Email: <a href="mailto:emailto:cs@centsmile.com" target="_blank">cs@centsmile.com</a>
+    </p>
+
+</body>
+
+</html>
